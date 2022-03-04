@@ -29,10 +29,10 @@ class ObstacleAvoidance():
         state_area = ''
     
         area = {
-            'right':  min(min(laser.ranges[200:431]), 10),
-            'front':  min(min(laser.ranges[432:648]), 10),
-            'left':   min(min(laser.ranges[649:880]), 10),
-        }
+            'right':  min(min(laser.ranges[0:268]), 10),
+            'front':  min(min(laser.ranges[269:450]), 10),
+            'left':   min(min(laser.ranges[451:719]), 10), #laser lidar a une range de 720
+        } #A MODIFIER !!!!
         
         if not self.stopped:
         
